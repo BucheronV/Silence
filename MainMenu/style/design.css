@@ -12,7 +12,30 @@ body {
     background-position: center;
     background-size: cover;
     position: sticky;
+}
+
+h1, h2, h3, h4, h5, h6{
     font-family: Apple Chancery, cursive;
+
+}
+
+h2{
+    color: #FFD700;
+    font-size: 2rem;
+}
+
+h4{
+    color: #FFD700;
+    font-size: 1.5rem;
+}
+
+p{
+    color: aliceblue;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
 }
 
 #maintitle{
@@ -60,6 +83,7 @@ body {
 
 #btn {
     background: transparent;
+    color: #000000;
 }
 
 /* css de la partie centrale */
@@ -72,15 +96,19 @@ body {
 }
 
 nav {
+    position: fixed;
+    z-index: 5;
+    top: 30vh;
     width: 20vw;
     height: 60vh;
-    background-color: #919191;
+    background-color: #91919150;
     border-radius: 0 0 15px 15px;
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    font-family: Apple Chancery, cursive;
 }
 
 .bouton{
@@ -101,6 +129,103 @@ nav {
 .bouton:hover{
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+
+/*main*/
+main{
+    position: relative;
+    top: 31vh;
+    left: 20vw;
+    width: 80vw;
+    padding: 20px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/*text de présentation*/
+article{
+    padding: 20px;
+    background-color: #00000050;
+    box-shadow: 5px 5px 5px 0px #ffffff, inset 4px 4px 15px 0px #ffffff, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 20px;
+}
+
+/*iframe{
+    width: 60%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: auto;
+}*/
+
 /*choix du site*/
+
+#school{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+.schools{
+    margin: 15px;
+    width: 500px;
+    max-width: 75vw;
+    min-width: 20vw;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 0px #ffffff, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.nom-site{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 70%;
+}
+
+#arm{
+    background: url("../assets/e2cArmMono.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#lil{
+    background: url("../assets/e2cLilleMono.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rbx{
+    background: url("../assets/e2cRoubaixMono.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#sto{
+    background: url("../assets/e2cStoMono.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 /*choix de livre*/
 
+/*footer*/
+
+footer{
+    position: relative;
+    top: 31vh;
+    width: 100vw;
+    background-color: #00000080;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+footer>div {
+    width: 25vw;
+    padding: 10px;
+}
