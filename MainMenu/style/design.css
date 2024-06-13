@@ -243,3 +243,20 @@ footer>div {
     width: 25vw;
     padding: 10px;
 }
+
+/*chill page*/ 
+.selectZone{
+    width: 100%;
+    padding: 20px;
+    background-color: #00000050;
+    box-shadow: 5px 5px 5px 0px #ffffff, inset 4px 4px 15px 0px #ffffff, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+#game-select{
+    width: 80%;
+    margin: 15px 0;
+}
+
+

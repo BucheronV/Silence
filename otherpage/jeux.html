@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../MainMenu/style/design.css">
     <title>Silence on lit !</title>
-    <script type="module" src="./scripts/scriptchill.js"></script>
+    <script type="module" src="./scripts/scriptchill.js" defer></script>
 </head>
 <body>
     <!--l'en tête-->
@@ -31,9 +31,16 @@
             <a href="../../otherpage/jeux.html" target="_self" class="bouton">Chill</a>
             <a href="../../otherpage/compte.html" target="_self" class="bouton">My account</a>
         </nav>
-    <!--partie laterale a faire par la suite
-    <aside id="right">BRAVO</aside>
-    -->
+    <main>
+        <div class="selectZone">
+            <label for="game-select">Select your game</label>
+            <select name="game-select" id="game-select">
+                <option value="1" selected>------</option>
+                <option value="2">Number of pages</option>
+            </select>
+        </div>
+        <div class="game-zone"></div>
+    </main>
     </div>
     <!--le bas de page
     <footer>
